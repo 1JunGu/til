@@ -10,4 +10,4 @@ My personal collection of TILs.
 
 ## Zotero
 
-- [Zotero configuration](https://github.com/1JunGu/tils/blob/main/tils/Zotero/zotero-configuration.md) - _2025-02-27 16:19_
+- [Zotero configuration](https://github.com/1JunGu/til/blob/main/tils/Zotero/zotero-configuration.md) - _2025-02-27 16:19_
