@@ -28,7 +28,7 @@ jobs:
       - run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH # 将 uv 添加到 PATH
 
       - name: Install dependencies
-        run: uv pip install . # 从 pyproject.toml 安装
+        run: uv sync # 从 pyproject.toml 安装
 
       - name: Update README
         run: uv run update_readme.py
