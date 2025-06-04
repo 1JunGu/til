@@ -1,2 +1,13 @@
-# til
-Today I Learned shared by Jun Gu
+# Today I Learned (TIL)
+
+My personal collection of TILs.
+
+## Table of Contents
+
+- [Zotero](#zotero)
+
+---
+
+## Zotero
+
+- [Zotero configuration](https://github.com/1JunGu/tils/blob/main/tils/Zotero/zotero-configuration.md) - _2025-02-27 16:19_
