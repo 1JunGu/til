@@ -1,0 +1,41 @@
+name: Update README
+
+on:
+  push:
+    branches:
+      - main # 或者你的主分支名，如 master
+    paths:
+      - 'tils/**.md' # 只在 tils 目录下的 md 文件变化时触发
+      - '.github/workflows/update_readme.yml' # 工作流自身变化也触发
+      - 'scripts/generate_readme.py' # 脚本变化也触发
+      - 'pyproject.toml' # 依赖变化也触发
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 允许 action 修改仓库内容
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python and uv
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9' # 选择你需要的 Python 版本
+      - run: curl -LsSf https://astral.sh/uv/install.sh | sh
+      - run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH # 将 uv 添加到 PATH
+
+      - name: Install dependencies
+        run: uv pip install . # 从 pyproject.toml 安装
+
+      - name: Update README
+        run: uv run update_readme.py
+
+      - name: Commit and push if README changed
+        run: |
+          git config --global user.name 'README-bot'
+          git config --global user.email 'actions@users.noreply.github.com'
+          git diff --quiet || (git add README.md && git commit -m "docs: Auto-update README based tils")
+          git push
