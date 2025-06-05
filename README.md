@@ -5,6 +5,7 @@ My personal collection of TILs.
 ## Table of Contents
 
 - [Zotero](#zotero)
+- [mac](#mac)
 - [windows](#windows)
 
 ---
@@ -12,6 +13,11 @@ My personal collection of TILs.
 ## Zotero
 
 - [Zotero configuration](https://github.com/1JunGu/til/blob/main/tils/Zotero/zotero-configuration.md) - _2025-02-27 16:19_
+
+
+## mac
+
+- [Mac Configurations](https://github.com/1JunGu/til/blob/main/tils/mac/Mac Configurations.md) - _2025-06-05 20:34_
 
 
 ## windows
