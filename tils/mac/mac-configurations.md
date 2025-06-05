@@ -1,5 +1,5 @@
 ---
-title: Mac Configurations
+title: mac-configurations
 date: 2025-06-05 20:34
 modify: 2025-06-05 20:34
 author: Jun Gu
