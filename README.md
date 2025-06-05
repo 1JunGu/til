@@ -17,7 +17,7 @@ My personal collection of TILs.
 
 ## mac
 
-- [Mac Configurations](https://github.com/1JunGu/til/blob/main/tils/mac/Mac Configurations.md) - _2025-06-05 20:34_
+- [mac-configurations](https://github.com/1JunGu/til/blob/main/tils/mac/mac-configurations.md) - _2025-06-05 20:34_
 
 
 ## windows
