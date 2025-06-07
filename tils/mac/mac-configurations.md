@@ -17,9 +17,11 @@ tags: []
 
 * Brave 浏览器:
 
-依赖同步链同步
 
+依赖同步链同步
 * Zotero 
+
+
 Zotero账户和 InfiniteCloud 同步数据
 * Obsidian
 依赖插件如下：
@@ -40,3 +42,7 @@ Dataview，RemotelySave（依赖 InfiniteCloud 同步）与 Templater
 * Flux 
 * Itsycal
 * iStat Menus
+
+## new software 
+- cotypist 
+
